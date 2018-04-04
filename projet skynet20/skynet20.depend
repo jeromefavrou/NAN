@@ -57,7 +57,7 @@
 1507667117 source:/home/jerome/Bureau/projet skynet20/Sources/c++/RNL_error.cpp
 	"header/RNL_error.hpp"
 
-1522354283 source:/home/favrou/Documents/projet skynet20/main.cpp
+1522873484 source:/home/favrou/Documents/projet skynet20/main.cpp
 	<iostream>
 	<array>
 	"Sources/c++/header/auto_building.hpp"
@@ -108,12 +108,13 @@
 	<fstream>
 	"RNL_error.hpp"
 
-1521923295 /home/favrou/Documents/projet skynet20/Sources/c++/header/Learning.hpp
+1522866777 /home/favrou/Documents/projet skynet20/Sources/c++/header/Learning.hpp
 	"IORNL.hpp"
 	"Linear_Spread.hpp"
 
-1522353337 source:/home/favrou/Documents/projet skynet20/Sources/c++/Learning.cpp
+1522873423 source:/home/favrou/Documents/projet skynet20/Sources/c++/Learning.cpp
 	"header/Learning.hpp"
+	<fstream>
 
 1521912148 /home/favrou/Documents/projet skynet20/Sources/c++/header/matrice.hpp
 	<vector>
@@ -131,6 +132,6 @@
 	<windows.h>
 	"Learning.hpp"
 
-1522354231 source:/home/favrou/Documents/projet skynet20/Sources/c++/auto_building.cpp
+1522840058 source:/home/favrou/Documents/projet skynet20/Sources/c++/auto_building.cpp
 	"header/auto_building.hpp"
 

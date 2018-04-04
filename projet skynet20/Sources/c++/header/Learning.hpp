@@ -7,7 +7,7 @@
 class Learning
 {
 public:
-    enum Progress_type{CONST=0,LINEAR,LOG};
+    enum Progress_type{CONST=0,LINEAR_IT,LINEAR_ERROR,LOG};
 
     Learning(void);
     ~Learning(void);
@@ -22,22 +22,22 @@ public:
     /////////////////////////////////////////////////
     ///Set the factor and methode of progression
     /////////////////////////////////////////////////
-    void set_epsilon(Progress_type,float );
+    void set_epsilon(Progress_type =LINEAR_IT,float =1.0 );
 
     /////////////////////////////////////////////////
     ///Set the factor, and enable methode of progression
     /////////////////////////////////////////////////
-    void set_inertie(Progress_type,bool,float);
+    void set_inertie(Progress_type,bool,float =1.0);
 
     /////////////////////////////////////////////////
     ///Set number of iteration max for learning
     /////////////////////////////////////////////////
-    void set_it(long int );
+    void set_it(long int =100u);
 
     /////////////////////////////////////////////////
     ///Enable and set auto stop
     /////////////////////////////////////////////////
-    void set_auto_stop(bool,float,unsigned int);
+    void set_auto_stop(bool= true,float= 0.05,unsigned int =10u);
 
     /////////////////////////////////////////////////
     ///get the normalize percentage error
@@ -80,7 +80,7 @@ private:
     /////////////////////////////////////////////////
     ///Function of factor of progression
     /////////////////////////////////////////////////
-    float Fact_Progress(Progress_type,float,float);
+    float Fact_Progress(float);
 
 
     //!< attribut

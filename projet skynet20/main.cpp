@@ -62,10 +62,10 @@ int main()
 
     Learning Apprentissage;
 
-    Apprentissage.set_epsilon(Learning::LINEAR,1.0);
+    Apprentissage.set_epsilon(Learning::LINEAR_ERROR);
     Apprentissage.set_it(10000);
-    Apprentissage.set_inertie(Learning::CONST,false,1.0);
-    Apprentissage.set_auto_stop(true,0.01,10);
+    Apprentissage.set_inertie(Learning::CONST,false);
+    Apprentissage.set_auto_stop(true,0.02,10);
 
     /////////////////////////////////////////////////
     ///auto construction du reseau (en dev)
@@ -94,7 +94,7 @@ int main()
 
     display(IA,Win_out,propag);
 
-    cout <<"apprentissage en: "<<static_cast<float>(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count())/1000.0f<< " s\n"<<endl;
+    cout <<"apprentissage en: "<<static_cast<float>(std::chrono::duration_cast<std::chrono::microseconds>(end-start).count())/1000000.0f<< " s\n"<<endl;
     cout <<"taux apprentissage: "<<(1.0-Apprentissage.get_error())*100.0<<'%'<<endl;
 
     cerr <<rnl_error_to_str(IA.get_error());
