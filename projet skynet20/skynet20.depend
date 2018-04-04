@@ -1,0 +1,136 @@
+# depslib dependency file v1.0
+1507668476 source:/home/jerome/Bureau/projet skynet20/main.cpp
+	<iostream>
+	<array>
+	<memory>
+	<iostream>
+	"Sources/c++/header/RNL_type.hpp"
+	"neuronal_tool.hpp"
+
+1505120372 /home/jerome/Bureau/projet skynet20/structure_neuronal.hpp
+	<vector>
+	<memory>
+	<iostream>
+
+1505120372 source:/home/jerome/Bureau/projet skynet20/structure_neuronal.cpp
+	"structure_neuronal.hpp"
+
+1507494765 /home/jerome/Bureau/projet skynet20/neuronal_tool.hpp
+	<vector>
+	<cmath>
+	<thread>
+	<random>
+
+1505234694 source:/home/jerome/Bureau/projet skynet20/neuronal_tool.cpp
+	"neuronal_tool.hpp"
+
+1505234703 source:/home/jerome/Bureau/projet skynet20/neuronal_tool.hpp
+	<vector>
+	<cmath>
+	<random>
+
+1507495618 /home/jerome/Bureau/projet skynet20/RNL_type.hpp
+	<string>
+	<vector>
+	<random>
+	<fstream>
+
+1507495498 source:/home/jerome/Bureau/projet skynet20/RNL_type.cpp
+	"RNL_type.hpp"
+	<iostream>
+
+1507668359 /home/jerome/Bureau/projet skynet20/Sources/c++/header/RNL_type.hpp
+	<string>
+	<vector>
+	<random>
+	<iostream>
+	<fstream>
+	"RNL_error.hpp"
+
+1507668379 source:/home/jerome/Bureau/projet skynet20/Sources/c++/RNL_type.cpp
+	"header/RNL_type.hpp"
+
+1507662868 /home/jerome/Bureau/projet skynet20/Sources/c++/header/RNL_error.hpp
+	<array>
+	<string>
+
+1507667117 source:/home/jerome/Bureau/projet skynet20/Sources/c++/RNL_error.cpp
+	"header/RNL_error.hpp"
+
+1522354283 source:/home/favrou/Documents/projet skynet20/main.cpp
+	<iostream>
+	<array>
+	"Sources/c++/header/auto_building.hpp"
+	"I_E.hpp"
+
+1522350892 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_type.hpp
+	<string>
+	<vector>
+	<random>
+	<iostream>
+	<fstream>
+	"RNL_error.hpp"
+	"matrice.hpp"
+
+1508704411 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_error.hpp
+	<array>
+	<string>
+
+1508028504 /home/favrou/Documents/projet skynet20/neuronal_tool.hpp
+	<vector>
+	<cmath>
+	<thread>
+	<random>
+
+1508704411 source:/home/favrou/Documents/projet skynet20/Sources/c++/RNL_error.cpp
+	"header/RNL_error.hpp"
+
+1522341666 source:/home/favrou/Documents/projet skynet20/Sources/c++/RNL_type.cpp
+	"header/RNL_type.hpp"
+
+1522337622 /home/favrou/Documents/projet skynet20/Sources/c++/header/Linear_Spread.hpp
+	<vector>
+	<thread>
+	<cmath>
+	<chrono>
+	"RNL_Math.hpp"
+	"RNL_type.hpp"
+
+1522337614 source:/home/favrou/Documents/projet skynet20/Sources/c++/Linear_Spread.cpp
+	"header/Linear_Spread.hpp"
+
+1520539235 source:/home/favrou/Documents/projet skynet20/Sources/c++/IORNL.cpp
+	"header/IORNL.hpp"
+
+1520539235 /home/favrou/Documents/projet skynet20/Sources/c++/header/IORNL.hpp
+	<array>
+	<vector>
+	<fstream>
+	"RNL_error.hpp"
+
+1521923295 /home/favrou/Documents/projet skynet20/Sources/c++/header/Learning.hpp
+	"IORNL.hpp"
+	"Linear_Spread.hpp"
+
+1522353337 source:/home/favrou/Documents/projet skynet20/Sources/c++/Learning.cpp
+	"header/Learning.hpp"
+
+1521912148 /home/favrou/Documents/projet skynet20/Sources/c++/header/matrice.hpp
+	<vector>
+	<iterator>
+
+1521203365 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_Math.hpp
+
+1521911835 /home/favrou/Documents/projet skynet20/I_E.hpp
+	<iostream>
+	<array>
+
+1522352303 /home/favrou/Documents/projet skynet20/Sources/c++/header/auto_building.hpp
+	<cstdlib>
+	<fstream>
+	<windows.h>
+	"Learning.hpp"
+
+1522354231 source:/home/favrou/Documents/projet skynet20/Sources/c++/auto_building.cpp
+	"header/auto_building.hpp"
+

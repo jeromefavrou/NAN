@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="Sources/c++/header/RNL_Math.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="550" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/auto_building.hpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1375" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/Linear_Spread.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="500" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="skynet20.py" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="129" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2237" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/RNL_error.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="190" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/Learning.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2171" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/RNL_type.hpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="301" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/matrice.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3959" topLine="159" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/auto_building.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1911" topLine="63" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="7" />
+			<Collapse line="16" />
+			<Collapse line="36" />
+			<Collapse line="44" />
+		</Folding>
+	</File>
+	<File name="Sources/c++/RNL_error.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="439" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sources/python/RNL_type.py" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="497" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="I_E.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="556" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/Linear_Spread.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1726" topLine="67" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/IORNL.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1011" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/Learning.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3162" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="Sources/c++/header/IORNL.hpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="242" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="neuronal_tool.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1950" topLine="17" />
+		</Cursor>
+		<Folding>
+			<Collapse line="22" />
+		</Folding>
+	</File>
+	<File name="Sources/c++/RNL_type.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="258" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

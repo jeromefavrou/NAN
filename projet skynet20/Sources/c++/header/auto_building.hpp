@@ -1,0 +1,61 @@
+#ifndef AUTO_BUILDING_HPP_INCLUDED
+#define AUTO_BUILDING_HPP_INCLUDED
+
+#include <cstdlib>
+#include <fstream>
+
+#ifdef WIN32
+    #include <windows.h>
+#endif
+
+#include "Learning.hpp"
+
+class Auto_Building
+{
+public:
+    Auto_Building(void);
+    ~Auto_Building(void);
+
+    /////////////////////////////////////////////////
+    /// automatique building network
+    /////////////////////////////////////////////////
+    void building(RNL &,IO_rnl &, LSpread &,Learning &);
+
+    /////////////////////////////////////////////////
+    /// set device for calculate
+    /////////////////////////////////////////////////
+    void set_spreed_device(LSpread::Spread_Type);
+
+    /////////////////////////////////////////////////
+    /// get virtual memory free for calculate
+    /////////////////////////////////////////////////
+    size_t memory(void);
+
+    /////////////////////////////////////////////////
+    /// clear the memory
+    /////////////////////////////////////////////////
+    void clear();
+
+private:
+
+    /////////////////////////////////////////////////
+    /// calculate with cpu device
+    /////////////////////////////////////////////////
+    void building_cpu(IO_rnl &, LSpread &,Learning &);
+
+    /////////////////////////////////////////////////
+    /// initialize tempory memory
+    /////////////////////////////////////////////////
+    void init_temp(IO_rnl &);
+
+    /////////////////////////////////////////////////
+    /// add layer for auto building
+    /////////////////////////////////////////////////
+    void add_hidden_layer(void);
+
+    RNL _temp_RNL_;
+
+    LSpread::Spread_Type _St_;
+};
+
+#endif // AUTO_BUILDING_HPP_INCLUDED
