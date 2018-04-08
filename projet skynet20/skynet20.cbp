@@ -46,12 +46,14 @@
 		<Unit filename="Sources/c++/Linear_Spread.cpp">
 			<Option virtualFolder="Sources/c++/header/" />
 		</Unit>
+		<Unit filename="Sources/c++/Memory_stats.cpp" />
 		<Unit filename="Sources/c++/RNL_error.cpp" />
 		<Unit filename="Sources/c++/RNL_type.cpp" />
 		<Unit filename="Sources/c++/auto_building.cpp" />
 		<Unit filename="Sources/c++/header/IORNL.hpp" />
 		<Unit filename="Sources/c++/header/Learning.hpp" />
 		<Unit filename="Sources/c++/header/Linear_Spread.hpp" />
+		<Unit filename="Sources/c++/header/Memory_stats.hpp" />
 		<Unit filename="Sources/c++/header/RNL_Math.hpp" />
 		<Unit filename="Sources/c++/header/RNL_error.hpp" />
 		<Unit filename="Sources/c++/header/RNL_type.hpp" />

@@ -1,12 +1,8 @@
 #ifndef AUTO_BUILDING_HPP_INCLUDED
 #define AUTO_BUILDING_HPP_INCLUDED
 
-#include <cstdlib>
-#include <fstream>
 
-#ifdef WIN32
-    #include <windows.h>
-#endif
+#include <fstream>
 
 #include "Learning.hpp"
 
@@ -25,11 +21,6 @@ public:
     /// set device for calculate
     /////////////////////////////////////////////////
     void set_spreed_device(LSpread::Spread_Type);
-
-    /////////////////////////////////////////////////
-    /// get virtual memory free for calculate
-    /////////////////////////////////////////////////
-    size_t memory(void);
 
     /////////////////////////////////////////////////
     /// clear the memory

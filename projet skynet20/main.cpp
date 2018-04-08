@@ -9,6 +9,18 @@ using namespace std;
 
 /** faire methode get_memory et get_info sur IO_rnl, learning et rnl_type*/
 
+/** acces base de donné*/
+
+/** metre a jour sauvegarde importation*/
+
+/** mettre en place inertie*/
+
+/** mettre en place donné test pour generalisation*/
+
+/**programmer gpu*/
+
+/**gestion des erreur a revoir*/
+
 int main()
 {
     cout << "Version pre Alpha 0.0.2 test binaire\nsur x86 Intel pentium 2X 2.4Ghz\n"<<endl;
@@ -19,10 +31,12 @@ int main()
 
     IO_rnl Win_out;
 
-    Win_out+=array<vector<float>,2>{{{0,0},{0,0,0,1}}};
+    /*Win_out+=array<vector<float>,2>{{{0,0},{0,0,0,1}}};
     Win_out+=array<vector<float>,2>{{{0,1},{1,1,0,0}}};
     Win_out+=array<vector<float>,2>{{{1,0},{1,1,0,0}}};
-    Win_out+=array<vector<float>,2>{{{1,1},{0,1,1,0}}};
+    Win_out+=array<vector<float>,2>{{{1,1},{0,1,1,0}}};*/
+
+
 
     /////////////////////////////////////////////////
     ///construction du reseaux de neurones
@@ -33,7 +47,7 @@ int main()
     IA.clear();
     IA.clear_error();
 
-    IA.Add_O(RNL::Init_O<float>(2)); ///deux entrées
+    /*IA.Add_O(RNL::Init_O<float>(2)); ///deux entrées
     IA.Add_O(RNL::Init_O<float>(2)); ///deux neurones cachés
     IA.Add_O(RNL::Init_O<float>(4)); ///quatre sorties
 
@@ -41,9 +55,9 @@ int main()
     IA.Add_B(RNL::Init_B<float>(4,RNL::NORMAL));
 
     IA.Add_W(RNL::Init_W<float>(2,2,RNL::NORMAL));
-    IA.Add_W(RNL::Init_W<float>(2,4,RNL::NORMAL));
+    IA.Add_W(RNL::Init_W<float>(2,4,RNL::NORMAL));*/
 
-
+    import(IA,Win_out,"data/");
     /////////////////////////////////////////////////
     ///definition des paremtre de propagation
     /////////////////////////////////////////////////
@@ -95,7 +109,9 @@ int main()
     display(IA,Win_out,propag);
 
     cout <<"apprentissage en: "<<static_cast<float>(std::chrono::duration_cast<std::chrono::microseconds>(end-start).count())/1000000.0f<< " s\n"<<endl;
-    cout <<"taux apprentissage: "<<(1.0-Apprentissage.get_error())*100.0<<'%'<<endl;
+    cout <<"taux apprentissage: "<<(1.0-Apprentissage.get_error())*100.0<<'%'<<endl<<endl;
+
+    save_as(IA,Win_out,"data/");
 
     cerr <<rnl_error_to_str(IA.get_error());
     cerr <<rnl_error_to_str(Win_out.get_error());

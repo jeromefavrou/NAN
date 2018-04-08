@@ -5,24 +5,24 @@
 
 void import(RNL &skynet,IO_rnl &Win_out, std::string const & path)
 {
-    if(Win_out.import(path+"Io_rnl_test_lerning_2.io.bin"))
+    if(Win_out.import(path+"4_logic_funct.io_pt.bin"))
         std::cout <<"import IO with succes\n" <<std::endl;
     else
         std::cout <<"import IO without succes\n" <<std::endl;
 
-    /*if(skynet.import(path+"rnl.data.bin"))
-        cout <<"import RNL with succes\n" <<endl;
+    if(skynet.import(path+"4_logic_funct.data_pt.bin"))
+        std::cout <<"import RNL with succes\n" <<std::endl;
     else
-        cout <<"import RNL without succes\n" <<endl;*/
+        std::cout <<"import RNL without succes\n" <<std::endl;
 }
 void save_as(RNL &skynet,IO_rnl &Win_out, std::string const & path)
 {
-    /*if(skynet.save_as(path+"test_lerning.data_2.bin"))
+    if(skynet.save_as(path+"4_logic_funct.data_pt.bin"))
         std::cout <<"export RNL with succes" <<std::endl;
     else
-        std::cout <<"export RNL without succes" <<std::endl;*/
+        std::cout <<"export RNL without succes" <<std::endl;
 
-    if(Win_out.save_as(path+"Io_rnl_test_lerning_2.io.bin"))
+    if(Win_out.save_as(path+"4_logic_funct.io_pt.bin"))
         std::cout <<"export IO with succes" <<std::endl;
     else
         std::cout <<"export IO without succes" <<std::endl;

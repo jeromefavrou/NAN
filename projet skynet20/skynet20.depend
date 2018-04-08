@@ -57,18 +57,17 @@
 1507667117 source:/home/jerome/Bureau/projet skynet20/Sources/c++/RNL_error.cpp
 	"header/RNL_error.hpp"
 
-1522873484 source:/home/favrou/Documents/projet skynet20/main.cpp
+1523183378 source:/home/favrou/Documents/projet skynet20/main.cpp
 	<iostream>
 	<array>
 	"Sources/c++/header/auto_building.hpp"
 	"I_E.hpp"
 
-1522350892 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_type.hpp
-	<string>
+1523184427 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_type.hpp
 	<vector>
 	<random>
 	<iostream>
-	<fstream>
+	"Memory_stats.hpp"
 	"RNL_error.hpp"
 	"matrice.hpp"
 
@@ -85,7 +84,7 @@
 1508704411 source:/home/favrou/Documents/projet skynet20/Sources/c++/RNL_error.cpp
 	"header/RNL_error.hpp"
 
-1522341666 source:/home/favrou/Documents/projet skynet20/Sources/c++/RNL_type.cpp
+1523184538 source:/home/favrou/Documents/projet skynet20/Sources/c++/RNL_type.cpp
 	"header/RNL_type.hpp"
 
 1522337622 /home/favrou/Documents/projet skynet20/Sources/c++/header/Linear_Spread.hpp
@@ -122,16 +121,25 @@
 
 1521203365 /home/favrou/Documents/projet skynet20/Sources/c++/header/RNL_Math.hpp
 
-1521911835 /home/favrou/Documents/projet skynet20/I_E.hpp
+1523177998 /home/favrou/Documents/projet skynet20/I_E.hpp
 	<iostream>
 	<array>
 
-1522352303 /home/favrou/Documents/projet skynet20/Sources/c++/header/auto_building.hpp
-	<cstdlib>
+1523117944 /home/favrou/Documents/projet skynet20/Sources/c++/header/auto_building.hpp
 	<fstream>
-	<windows.h>
 	"Learning.hpp"
 
-1522840058 source:/home/favrou/Documents/projet skynet20/Sources/c++/auto_building.cpp
+1523117944 source:/home/favrou/Documents/projet skynet20/Sources/c++/auto_building.cpp
 	"header/auto_building.hpp"
+
+1523117518 /home/favrou/Documents/projet skynet20/Sources/c++/header/Memory_stats.hpp
+	<string>
+	<fstream>
+	<cstdlib>
+	<iostream>
+	<cstdlib>
+	<windows.h>
+
+1523117887 source:/home/favrou/Documents/projet skynet20/Sources/c++/Memory_stats.cpp
+	"header/Memory_stats.hpp"
 

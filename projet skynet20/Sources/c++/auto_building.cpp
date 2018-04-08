@@ -38,38 +38,6 @@ void Auto_Building::set_spreed_device(LSpread::Spread_Type __St__)
     this->_St_=__St__;
 }
 
-/////////////////////////////////////////////////
-/// get virtual memory free for calculate
-/////////////////////////////////////////////////
-size_t Auto_Building::memory(void)
-{
-    unsigned int mem(0);
-    #ifdef WIN32
-    MEMORYSTATUS stat;
-    GlobalMemoryStatus (&stat);
-
-    mem=stat.dwAvailVirtual;
-    #endif
-
-    #ifndef WIN32
-    std::ifstream If("/proc/meminfo");
-    std::string jmp("");
-
-
-    while(If)
-    {
-        If >> jmp;
-
-        if(jmp=="MemFree:")
-        {
-            If >> mem;
-            break;
-        }
-    }
-    #endif // linux
-
-    return mem;
-}
 
 /////////////////////////////////////////////////
 /// clear the memory
