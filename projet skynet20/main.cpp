@@ -80,6 +80,7 @@ int main()
     Apprentissage.set_it(10000);
     Apprentissage.set_inertie(Learning::CONST,false);
     Apprentissage.set_auto_stop(true,0.02,10);
+    Apprentissage.set_save_as(false,"");
 
     /////////////////////////////////////////////////
     ///auto construction du reseau (en dev)

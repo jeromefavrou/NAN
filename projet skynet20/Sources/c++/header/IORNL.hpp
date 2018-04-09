@@ -15,6 +15,8 @@ public:
     #define Iin int(0)
     #define Iout int(1)
 
+    enum Format{RAW=0,CALC};
+
     typedef std::array<std::vector<float>,2>IO_type;
 
     IO_rnl();
@@ -31,7 +33,7 @@ public:
 
     IO_rnl add_IO(IO_type const &);
     bool import(std::string const &);
-    bool save_as(std::string const &);
+    bool save_as(std::string const &,Format = RAW);
     void reset(void);
 
     void clear_error(void);
@@ -39,6 +41,9 @@ public:
 
 private:
     unsigned int io_indexe;
+
+    bool save_as_raw(std::string const &);
+    bool save_as_calc(std::string const &);
 
     std::vector<IO_type> io_data;
 

@@ -128,7 +128,27 @@ bool IO_rnl::import(string const & file)
     return false;
 }
 
-bool IO_rnl::save_as(string const & file)
+bool IO_rnl::save_as(string const & __file__,Format __format__)
+{
+
+    switch(__format__)
+    {
+    case RAW:
+        return this->save_as_raw(__file__);
+        break;
+
+    case CALC:
+        this->save_as_calc(__file__);
+        break;
+
+    default:
+        return this->save_as_raw(__file__);
+        break;
+    }
+    return this->save_as_raw(__file__);
+}
+
+bool IO_rnl::save_as_raw(std::string const & __file__)
 {
     ofstream Of;
 
@@ -141,7 +161,7 @@ bool IO_rnl::save_as(string const & file)
         if(__size__==0)
             throw logic_error("io_rnl.data size = 0");
 
-        Of.open(file,ios::out | ios::binary);
+        Of.open(__file__,ios::out | ios::binary);
 
         float header(IO_HEAD);
         Of.write(reinterpret_cast<char *>(&header),sizeof(float));
@@ -167,7 +187,7 @@ bool IO_rnl::save_as(string const & file)
     catch(system_error& e)
     {
         this->rnl_e[2].stat=1;
-        this->rnl_e[2].warn=file+" cannot be open -> "+string(e.what());
+        this->rnl_e[2].warn=__file__+" cannot be open -> "+string(e.what());
         return false;
     }
     catch(exception const & e)
@@ -182,6 +202,61 @@ bool IO_rnl::save_as(string const & file)
     return false;
 }
 
+bool IO_rnl::save_as_calc(std::string const & __file__)
+{
+    ofstream Of;
+
+    Of.exceptions(ofstream::failbit | ofstream::badbit);
+
+    try
+    {
+        unsigned int __size__=this->size();
+
+        if(__size__==0)
+            throw logic_error("io_rnl.data size = 0");
+
+        Of.open(__file__);
+
+        for(auto i=0u; i < this->io_data[0].front().size(); i++)
+            Of << "IN " << i << '\t';
+
+        for(auto i=0u; i < this->io_data[0].back().size(); i++)
+            Of << "OUT " << i << '\t';
+
+        Of << std::endl;
+
+        for(auto &exp : this->io_data)
+        {
+           for(auto & in : exp.front() )
+                Of << in << '\t';
+
+           for(auto & out : exp.back() )
+                Of << out << '\t';
+
+            Of << std::endl;
+        }
+
+        this->rnl_e[2].stat=0;
+
+        return true;
+    }
+    catch(system_error& e)
+    {
+        this->rnl_e[2].stat=1;
+        this->rnl_e[2].warn=__file__+" cannot be open -> "+string(e.what());
+        return false;
+    }
+    catch(exception const & e)
+    {
+        this->rnl_e[0].stat=1;
+        this->rnl_e[0].warn=string(e.what());
+        return false;
+    }
+
+    this->rnl_e[0].stat=1;
+
+    return false;
+}
 
 void IO_rnl::clear_error(void)
 {

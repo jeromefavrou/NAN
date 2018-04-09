@@ -22,7 +22,7 @@ void save_as(RNL &skynet,IO_rnl &Win_out, std::string const & path)
     else
         std::cout <<"export RNL without succes" <<std::endl;
 
-    if(Win_out.save_as(path+"4_logic_funct.io_pt.bin"))
+    if(Win_out.save_as(path+"4_logic_funct.txt",IO_rnl::CALC)&&Win_out.save_as(path+"4_logic_funct.io_pt.bin") )
         std::cout <<"export IO with succes" <<std::endl;
     else
         std::cout <<"export IO without succes" <<std::endl;

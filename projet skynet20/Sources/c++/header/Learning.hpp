@@ -40,6 +40,11 @@ public:
     void set_auto_stop(bool= true,float= 0.05,unsigned int =10u);
 
     /////////////////////////////////////////////////
+    ///Enable and set save of learning
+    /////////////////////////////////////////////////
+    void set_save_as(bool= false,std::string const & ="");
+
+    /////////////////////////////////////////////////
     ///get the normalize percentage error
     /////////////////////////////////////////////////
     float get_error(void);
@@ -98,6 +103,9 @@ private:
     bool _auto_build_;
     bool _inertie_;
     bool _auto_stop_;
+    bool _save_learning_stats_;
+
+    std::string _path_file_;
 
     /*std::unique_ptr<RNL> _RNL_last_;
     std::unique_ptr<std::vector<Matrice<float>>> _delta_last_2;*/

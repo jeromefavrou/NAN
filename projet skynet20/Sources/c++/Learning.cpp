@@ -1,7 +1,7 @@
 #include "header/Learning.hpp"
 
 Learning::Learning(void):_auto_stop_(false),_epsilon_(1),_Eps_type_(Progress_type::CONST),
-_Alpha_type_(Progress_type::CONST),_auto_build_(false),_inertie_(false)
+_Alpha_type_(Progress_type::CONST),_auto_build_(false),_inertie_(false),_save_learning_stats_(false),_path_file_("")
 {
 
 }
@@ -77,6 +77,15 @@ void Learning::set_auto_stop(bool __as__, float __tx__,unsigned int __prec__)
 
 
 /////////////////////////////////////////////////
+///Enable and set save of learning
+/////////////////////////////////////////////////
+void Learning::set_save_as(bool __sa__,std::string const & __path_file__)
+{
+    this->_save_learning_stats_=__sa__;
+    this->_path_file_=__path_file__;
+}
+
+/////////////////////////////////////////////////
 ///Algo of simple CPU device
 /////////////////////////////////////////////////
 #include <fstream>
@@ -93,6 +102,15 @@ float Learning::CPU_learn(RNL & IA,IO_rnl const & IO,LSpread & work)
         for(auto i=IA.W_size();i>0;i--)
         {
             delta.push_back(std::vector<float>(IA.get_O(i).size(),0));
+        }
+
+
+        std::ofstream Of;
+
+        if(this->_save_learning_stats_)
+        {
+            Of.open(this->_path_file_);
+            Of << "Iteration" <<'\t'<<" Error " <<std::endl;
         }
 
         for(_I_=0;_I_<this->_It_;_I_++)
@@ -137,11 +155,13 @@ float Learning::CPU_learn(RNL & IA,IO_rnl const & IO,LSpread & work)
 
             if(this->_auto_stop_ && _I_%((this->_Eps_type_==LINEAR_ERROR || this->_Alpha_type_==LINEAR_ERROR)?1:this->_prec_)==0)
             {
+
+
                 if(this->_Error_<=this->_tx_error_?true:false)//optimizable
                     break;
 
-            /*std::ofstream test("error_once.txt", std::ios::app);
-            test << this->_I_<<'\t'<<this->_Error_ <<std::endl;*/
+                if(this->_save_learning_stats_)
+                    Of << this->_I_<<'\t'<<this->_Error_ <<std::endl;
             }
         }
     }
